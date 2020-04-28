@@ -64,9 +64,7 @@ function takepicture() {
       context.drawImage(video, 0, 0, width, height);
       var data = canvas.toDataURL('img/png');
       photo.setAttribute('src', data);
-      
       LinkDownload.setAttribute('href', data);
-
     } else {
       clearphoto();
     }
@@ -76,7 +74,6 @@ function clearphoto() {
 	var context = canvas.getContext('2d');
 	context.fillStyle = "#fff";
 	context.fillRect(0, 0, canvas.width, canvas.height);
-
 	var data = canvas.toDataURL('img/png');
 	photo.setAttribute('src', data);
 }
