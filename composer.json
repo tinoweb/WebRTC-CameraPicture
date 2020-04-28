@@ -1,1 +1,5 @@
-{}
+{
+    "require": {
+        "social-links/social-links": "^1.15"
+    }
+}
