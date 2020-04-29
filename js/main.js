@@ -12,7 +12,7 @@
 	LinkDownload = document.getElementById('LinkDownload');
 	canvas = document.getElementById('canvas');
   photo = document.getElementById('photo');
-  elementoShow = document.getElementById('downloadFoto');
+  let elementoShow = document.getElementById('downloadFoto');
 	videoContent = document.getElementById('localVideo');
 	clearphoto();
 
