@@ -11,7 +11,8 @@
 	startbutton = document.getElementById('startButton');
 	LinkDownload = document.getElementById('LinkDownload');
 	canvas = document.getElementById('canvas');
-	photo = document.getElementById('photo');
+  photo = document.getElementById('photo');
+  elementoShow = document.getElementById('downloadFoto');
 	videoContent = document.getElementById('localVideo');
 	clearphoto();
 
@@ -63,7 +64,10 @@ function takepicture() {
       canvas.height = height;
       context.drawImage(video, 0, 0, width, height);
       var data = canvas.toDataURL('img/png');
-      photo.setAttribute('src', data);
+      if (data) {
+        elementoShow.classList.remove("d-none");
+        photo.setAttribute('src', data);
+      }
       LinkDownload.setAttribute('href', data);
     } else {
       clearphoto();

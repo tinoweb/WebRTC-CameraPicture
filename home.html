@@ -13,22 +13,36 @@
 
 	<!-- <video autoplay playsinline></video> -->
 
-	<section class="container mt-5">
+	<section class="m-5">
 		<div class="row">
-			<div class="col-md-6 col-sm-12">
+			<div class="col-xs-12 col-md-12 col-sm-12">
 				<div class="card" style="background-color: #d3d3d3">
 					<div class="view overlay">
 						<video class="center" id="localVideo" autoplay></video>
 					</div>
 				
-					<div class="card-body">
-		  				<button class="btn btn-warning btn-block" id="startButton">Tire uma foto
+					<div class="card-body text-center">
+		  				<button class="btn-floating btn-lg btn-default waves-effect waves-light" id="startButton" style="
+						  position: relative;
+						  padding: 0;
+						  margin: 10px;
+						  cursor: pointer;
+						  border-radius: 50%;
+						  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+						  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+						  -webkit-transition: all .2s ease-in-out;
+						  transition: all .2s ease-in-out;
+						  width: 100px;
+						  height: 100px;
+					  ">Tirar foto
 		  				</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-6 col-sm-12">
+			
+
+			<div class="col-xs-12 col-md-12 col-sm-12 mt-5 d-none" id="downloadFoto">
 				<div class="card">
 					<div class="view overlay">
 						<img class="img-fluid" id="photo" alt="The screen capture will appear in this box.">
